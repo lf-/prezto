@@ -6,7 +6,7 @@
 #
 
 # Return if requirements are not found.
-if [[ "$TERM" == (dumb|linux|*bsd*|eterm*) ]]; then
+if [[ "$TERM" == (dumb|*bsd*|eterm*) ]]; then
   return 1
 fi
 

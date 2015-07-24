@@ -12,7 +12,9 @@ fi
 
 # Customize to your needs...
 # rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 # hub
 eval "$(hub alias -s)"
 
+export VISUAL=nvim
+export EDITOR="$VISUAL"

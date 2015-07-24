@@ -32,7 +32,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-	'syntax-highlighting' \
+  'syntax-highlighting' \
   'prompt'
 
 #
@@ -122,7 +122,6 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
   'main' \
   'brackets' \
   'pattern' \
-  'cursor' \
   'root'
 #
 # Set syntax highlighting styles.
