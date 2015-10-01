@@ -23,6 +23,3 @@ fi
 if [[ -e $(which hub) ]]; then
 	eval "$(hub alias -s)"
 fi
-
-export VISUAL=nvim
-export EDITOR="$VISUAL"
