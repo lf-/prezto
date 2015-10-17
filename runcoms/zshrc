@@ -11,15 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-# personal bin
-if [[ -d $HOME/bin ]]; then
-	export PATH="$PATH:$HOME/bin"
-fi
-# rbenv
-if [[ -e $(which rbenv) ]]; then
-	eval "$(rbenv init -)"
+if which virtualenvwrapper.sh > /dev/null 2>&1; then
+	source "$(which virtualenvwrapper.sh)"
 fi
 # hub
-if [[ -e $(which hub) ]]; then
+if which hub > /dev/null 2>&1; then
 	eval "$(hub alias -s)"
 fi
