@@ -21,6 +21,9 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
+# libreoffice sucks
+export SAL_USE_VCLPLUGIN=gtk
+
 #
 # Language
 #
