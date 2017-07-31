@@ -50,6 +50,7 @@ path=(
   $HOME/.local/bin
   /usr/local/{bin,sbin}
   $path
+  $HOME/esp/xtensa-esp32-elf/bin
 )
 
 #
