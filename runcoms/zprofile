@@ -51,6 +51,7 @@ path=(
   /usr/local/{bin,sbin}
   $path
   $HOME/esp/xtensa-esp32-elf/bin
+  $HOME/.npm-packages/bin
 )
 
 #
@@ -76,6 +77,11 @@ if [[ ! -d "$TMPDIR" ]]; then
   export TMPDIR="/tmp/$LOGNAME"
   mkdir -p -m 700 "$TMPDIR"
 fi
+
 # Sane infinality java config
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
+
+unset MANPATH
+export MANPATH="${HOME}/.npm-packages/share/man:$(manpath)"
+
 TMPPREFIX="${TMPDIR%/}/zsh"
