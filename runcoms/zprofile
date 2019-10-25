@@ -80,6 +80,7 @@ fi
 
 # Sane infinality java config
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 unset MANPATH
 export MANPATH="${HOME}/.npm-packages/share/man:$(manpath)"
