@@ -52,6 +52,7 @@ path=(
   $path
   $HOME/esp/xtensa-esp32-elf/bin
   $HOME/.npm-packages/bin
+  $HOME/.cargo/bin
 )
 
 #
