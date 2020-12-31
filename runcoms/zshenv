@@ -8,11 +8,10 @@
 export WORKON_HOME="$HOME/dev/python"
 export IDF_PATH="$HOME/esp/esp-idf"
 export NPM_PACKAGES="${HOME}/.npm-packages"
-export BROWSER=/usr/bin/chromium
+export BROWSER="$(which chromium)"
 export RUST_BACKTRACE=1
 
 # Ensure that a non-login, non-interactive shell has a defined environment.
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
-if [ -e /home/lf/.nix-profile/etc/profile.d/nix.sh ]; then . /home/lf/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

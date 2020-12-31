@@ -87,3 +87,7 @@ unset MANPATH
 export MANPATH="${HOME}/.npm-packages/share/man:$(manpath)"
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+if [[ -e "${HOME}/.nix-profile/etc/profile.d/nix.sh" ]]; then
+  . ~/.nix-profile/etc/profile.d/nix.sh
+fi

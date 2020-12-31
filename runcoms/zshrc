@@ -10,7 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
     source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-
 alias venv='. .env/bin/activate'
 
 # Customize to your needs...
@@ -21,3 +20,10 @@ fi
 if which hub > /dev/null 2>&1; then
     alias git=hub
 fi
+
+# add the pwd to the history
+function zshaddhistory() {
+    print -sr "${1%%$'\n'} ### ${PWD}"
+    fc -p
+}
+
