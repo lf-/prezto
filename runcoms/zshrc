@@ -22,8 +22,9 @@ if which hub > /dev/null 2>&1; then
 fi
 
 # add the pwd to the history
-function zshaddhistory() {
-    print -sr "${1%%$'\n'} ### ${PWD}"
-    fc -p
-}
+# this is broken because it puts the crap in the up arrow menu. *sigh*
+# function zshaddhistory() {
+#     print -sr "${1%%$'\n'} ### ${PWD}"
+#     fc -p
+# }
 
